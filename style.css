@@ -80,3 +80,24 @@ select{
     background-position-x: calc(100% - 20px);
     background-position-y: 20px;
 }
+
+@media screen and (max-width: 640px) {
+    textarea{
+        width: 350px;
+        height: 250px;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .hero h1{
+        text-align: center;
+        margin-top: 30px;
+    }
+    select{
+        width: 350px; /* Ensure select fills its container */
+        height: auto; /* Let the browser determine the height */
+        padding: 15px 20px; /* Adjust padding to increase apparent height */
+    }
+    
+  }
